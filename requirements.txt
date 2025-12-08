@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+ultralytics==8.1.9
+onnx
+onnxruntime
+pydantic
+python-multipart
