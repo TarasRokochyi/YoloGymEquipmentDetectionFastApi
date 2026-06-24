@@ -21,3 +21,5 @@ coverage.xml                       # Ignores coverage report files
 .pytest_cache                      # Ignores pytest cache directory
 .hypothesis                        # Ignores hypothesis directory
 .idea                              # Ignores IDE-specific files (e.g., from PyCharm)
+best.onnx                          # Model file — mount at runtime
+best.pt                            # Model file — mount at runtime
