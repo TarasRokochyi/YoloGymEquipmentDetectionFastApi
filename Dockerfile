@@ -16,6 +16,9 @@ WORKDIR /app
 
 RUN pip install --upgrade pip setuptools wheel
 
+# Install CPU-only torch first to avoid pulling the GPU (~3GB) build
+RUN pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
 # Install necessary Python packages
 RUN pip install -r requirements.txt
 

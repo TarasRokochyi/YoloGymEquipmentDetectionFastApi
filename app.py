@@ -69,7 +69,7 @@ async def detect_objects(request: Request, image: UploadFile = File(...), label:
     source = str(file_path)
 
     # Perform object detection
-    result = onnx_model(source, imgsz=512, save=True)
+    result = onnx_model(source, imgsz=640, save=True)
 
     # Process object detection results
     output = []
